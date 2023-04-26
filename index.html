@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css">
+  <link rel="stylesheet" href="owlcarousel/owl.carousel.css">
+<link rel="stylesheet" href="owlcarousel/owl.theme.default.css">
+
+  
+  
+</head>
+<body>
+<header>
+	<div class="container">
+		<h1>Jquery</h1>
+	</div>
+</header>	
+
+<div class="main">
+	<div class="container">
+		<div class="accordion">
+			<h2>Accordion :</h2>
+			<div id="accordion">
+  <h3>Section 1</h3>
+  <div>
+    <p>
+    Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+    ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+    amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+    odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+    </p>
+  </div>
+  <h3>Section 2</h3>
+  <div>
+    <p>
+    Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+    purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+    velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+    suscipit faucibus urna.
+    </p>
+  </div>
+  <h3>Section 3</h3>
+  <div>
+    <p>
+    Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+    Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+    ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+    lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+    </p>
+    <ul>
+      <li>List item one</li>
+      <li>List item two</li>
+      <li>List item three</li>
+    </ul>
+  </div>
+  <h3>Section 4</h3>
+  <div>
+    <p>
+    Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+    et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+    faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+    mauris vel est.
+    </p>
+    <p>
+    Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+    inceptos himenaeos.
+    </p>
+  </div>
+</div>
+		</div>
+
+		<div class="t_2">
+			<h2>Datepicker:</h2>
+			<p>Date: <input type="text" id="datepicker"></p>
+		</div>
+
+		<div class="t_3">
+			<h2>Tabs:</h2>
+			<div id="tabs">
+  <ul>
+    <li><a href="#tabs-1">One</a></li>
+    <li><a href="#tabs-2">Two</a></li>
+    <li><a href="#tabs-3">Three</a></li>
+  </ul>
+  <div id="tabs-1">
+    <p>tab 1.</p>
+  </div>
+  <div id="tabs-2">
+    <p>tab 2.</p>
+  </div>
+  <div id="tabs-3">
+    <p>tab 3.</p>
+  </div>
+</div>
+		</div>
+
+		<div class="t_4">
+			<h2>Owl carousel</h2>
+
+<div class="owl-carousel owl-theme">
+    <div class="item"><img src="img/1.png" alt=""></div>
+    <div class="item"><img src="img/2.png" alt=""></div>
+    <div class="item"><img src="img/3.png" alt=""></div>
+    <div class="item"><img src="img/4.png" alt=""></div>
+    <div class="item"><img src="img/5.png" alt=""></div>
+    <div class="item"><img src="img/6.png" alt=""></div>
+</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+	<script src="js/jquery-3.6.4.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script src="owlcarousel/owl.carousel.js"></script>
+  <script>
+  	$(document).ready(function(){
+  $(".owl-carousel").owlCarousel();
+});
+  	$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
+  </script>
+   <script>
+  $( function() {
+    $( "#accordion" ).accordion();
+    $( "#datepicker" ).datepicker();
+    $( "#tabs" ).tabs();
+  } );
+  </script>
+</body>
+</html>

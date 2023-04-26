@@ -1,0 +1,23 @@
+.container {
+	width: 1200px;
+	text-align: center;
+	display: flex;
+	position: relative;
+	left: 50vh;
+	flex-direction: column;
+}
+
+
+.main .container {
+	display: flex;
+}
+
+.t_3,.t_4,.t_2 {
+	margin-top: 50px;
+}
+
+.owl-carousel .item {
+    height: 15rem;
+    padding: 1rem;
+    border: 1px solid red;
+}
